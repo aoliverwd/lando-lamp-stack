@@ -1,0 +1,17 @@
+name: website-local
+recipe: lamp
+config:
+  php: '7.4'
+  webroot: web/public_html
+  database: mariadb
+  xdebug: true
+
+proxy:
+  mailhog:
+    - mail.website-local.lndo.site
+
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver

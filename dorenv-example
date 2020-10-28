@@ -1,0 +1,4 @@
+DB_HOST=database
+DB_NAME=lamp
+DB_PASSWORD=lamp
+DB_USER=lamp
