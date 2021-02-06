@@ -1,7 +1,7 @@
 name: website-local
 recipe: lamp
 config:
-  php: '7.4'
+  php: '8.0'
   webroot: web/public_html
   database: mariadb
   xdebug: true
