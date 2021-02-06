@@ -108,6 +108,7 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', true );
 
+/** Disable file editing from WP admin area */
 define('DISALLOW_FILE_EDIT', true);
 
 /* That's all, stop editing! Happy publishing. */
