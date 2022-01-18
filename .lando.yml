@@ -2,16 +2,9 @@ name: website-local
 recipe: lamp
 config:
   php: '8.0'
-  webroot: web/public_html
+  webroot: public_html
   database: mariadb
-  xdebug: true
-
-proxy:
-  mailhog:
-    - mail.website-local.lndo.site
 
 services:
-  mailhog:
-    type: mailhog
-    hogfrom:
-      - appserver
+  phpmyadmin:
+    type: phpmyadmin
